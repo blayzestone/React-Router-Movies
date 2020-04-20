@@ -3,6 +3,7 @@ import { Route, Switch, Link } from 'react-router-dom';
 
 import SavedList from './Movies/SavedList';
 import MovieList from './Movies/MovieList';
+import Movie from './Movies/Movie';
 
 const App = () => {
   const [savedList, setSavedList] = useState([]);
@@ -16,10 +17,10 @@ const App = () => {
       <SavedList list={savedList} />
       <Switch>
         <Route path="/movies/:id">
-          <h1>Movie Route</h1>
+          <Movie />
         </Route>
         <Route path="/">
-          <MovieList></MovieList>
+          <MovieList />
         </Route>
       </Switch>
     </div>
