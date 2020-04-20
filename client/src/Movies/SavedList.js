@@ -8,7 +8,7 @@ const SavedList = props => {
     <div className="saved-list">
       <h3>Saved Movies:</h3>
       {props.list.map((movie, index) => (
-        <NavLink to={`/movies/${movie.id}`} 
+        <NavLink to={`/movies/${movie.id}`} style={{ textDecoration: "none" }} 
           style={{ color: "inherit" }}
           activeStyle={{ color: "#ccc" }}
         >

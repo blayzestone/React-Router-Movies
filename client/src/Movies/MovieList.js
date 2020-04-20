@@ -32,7 +32,7 @@ const MovieList = props => {
 function MovieDetails({ movie }) {
   const { id } = movie;
   return (
-    <Link to={`/movies/${id}`} style={{ color: "inherit" }}>
+    <Link to={`/movies/${id}`} style={{ color: "inherit", textDecoration: "none"}}>
       <MovieCard movie={movie}/>
     </Link>
   );
